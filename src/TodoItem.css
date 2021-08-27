@@ -1,0 +1,30 @@
+.TodoItem{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    border: 1px solid #d0d0d0;
+    margin-top: 16px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.TodoItem-p{
+    margin: 0 16px;
+    flex: 1;
+}
+
+.TodoItem-p-complete{
+    text-decoration: line-through;
+}
+
+.TodoItem-icon{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    color: #bfbfbf;
+}
+
+.TodoItem-icon-active{
+    color: lawngreen;
+}

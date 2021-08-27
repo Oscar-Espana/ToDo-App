@@ -1,0 +1,12 @@
+.TodoSearch{
+    font-family: Montserrat;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #bcbcbc;
+    width: calc(90% - 48px) !important;
+}
+
+.TodoSearch:focus{
+    outline-color:#d8d8d8;
+}
