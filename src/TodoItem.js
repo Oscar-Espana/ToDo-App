@@ -1,16 +1,7 @@
 import React from 'react';
 import './TodoItem.css';
 
-export const TodoItem = ({text, completed}) => {
-
-    const onComplete =()=>{
-        alert(`Ya completaste el todo: ${text}` );
-    }
-
-    const onDelete =()=>{
-        alert(`Borraste el todo: ${text}`);
-    }
-
+export const TodoItem = ({text, completed, onComplete, onDelete}) => {
 
     return (
         <li className="TodoItem">
