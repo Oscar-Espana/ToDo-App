@@ -8,7 +8,7 @@ import './App.css';
 
 
 const AppUI = ({ totalTodos, completedTodos, searchValue, setSearchValue,
-    searchedTodos, completeTodo, deleteTodo
+    searchedTodos, completeTodo, deleteTodo, loading, error
 }) => {
 
     return (
@@ -22,6 +22,9 @@ const AppUI = ({ totalTodos, completedTodos, searchValue, setSearchValue,
                 setSearchValue={setSearchValue}
             />
             <TodoList>
+                {loading && <p>Cargando..</p>}
+                {error && <p>Ha ocurrido un error</p>}
+                {(!loading && !searchedTodos.length) && <p>Crea tu primer TODO</p>}
                 {
                     searchedTodos.map((todo, key) => (
                         <TodoItem key={key}
