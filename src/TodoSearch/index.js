@@ -13,7 +13,7 @@ export const TodoSearch = () => {
     return (
         <input
             className="TodoSearch"
-            placeholder="Agregar un Todo"
+            placeholder="Buscar Todo"
             value={searchValue}
             onChange={onSearchValueChange}
         />
