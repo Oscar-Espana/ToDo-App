@@ -28,3 +28,7 @@
 .TodoItem-icon-active{
     color: lawngreen;
 }
+
+.TodoItem-icon-delete:hover{
+    color: red;
+}

@@ -11,7 +11,7 @@ export const TodoItem = ({text, completed, onComplete, onDelete}) => {
             >✔</span>
             <p className={`TodoItem-p ${completed && 'TodoItem-p-complete'}`}>{text}</p>
             <span
-                className="TodoItem-icon"
+                className="TodoItem-icon TodoItem-icon-delete"
                 onClick={onDelete}
             >
                 ✘

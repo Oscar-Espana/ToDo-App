@@ -9,5 +9,12 @@
     background: #2993f1;
     font-size: 32px;
     color: white;
+    cursor: pointer;
     z-index: 1;
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+.CreateTodoButton:hover{
+    transform: rotate(224deg);
 }

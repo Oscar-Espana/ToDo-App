@@ -5,6 +5,11 @@
     margin: 0 auto;
 }
 
+.AppUI-TodoList-p{
+    text-align: center;
+    padding: 24px 0;
+    font-size: 16px;
+}
 @media screen and (min-width: 640px) {
 
     .root{

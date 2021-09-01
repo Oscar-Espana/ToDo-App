@@ -5,6 +5,10 @@
     font-size: 14px;
     border: 1px solid #bcbcbc;
     width: calc(90% - 48px) !important;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    align-self: center;
+    margin-bottom: 16px;
 }
 
 .TodoSearch:focus{
