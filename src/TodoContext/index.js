@@ -24,6 +24,18 @@ function TodoProvider({ children }) {
         });
     }
 
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+
+        newTodos.push(
+            {
+                completed: false,
+                text: text
+            }
+        );
+        saveTodos(newTodos);
+    }
+
     const completeTodo = (text) => {
         const newTodos = [...todos];
         const todoIndex = todos.findIndex(todo => todo.text === text);
@@ -50,7 +62,8 @@ function TodoProvider({ children }) {
             loading,
             error,
             openModal,
-            setOpenModal
+            setOpenModal,
+            addTodo
         }}>
             {children}
         </TodoContext.Provider>

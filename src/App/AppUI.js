@@ -6,6 +6,7 @@ import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal";
+import { TodoForm } from "../TodoForm";
 import './App.css';
 
 
@@ -47,7 +48,7 @@ const AppUI = () => {
             {
                 !!openModal && (
                     <Modal>
-                        <p>{searchedTodos[0].text}</p>
+                        <TodoForm />
                     </Modal>
                 )
             }
